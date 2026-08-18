@@ -94,7 +94,7 @@ const testimonials = [
     author: "Event Organizer, Manzini"
   },
   {
-    quote: "Fast response, real officers, not just a sign on the gate. That's what sold us.",
+    quote: "Fast response, real officers, not just a sign on the gate. That&apos;s what sold us.",
     author: "Homeowner, Eswatini"
   }
 ];
@@ -123,7 +123,7 @@ export default function Home() {
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-tight">
               Armed. Trained. <span className="text-stealth-red">Ready.</span><br />
-              <span className="text-3xl md:text-4xl block mt-2 text-stealth-white opacity-90">— Eswatini's Trusted Security Partner</span>
+              <span className="text-3xl md:text-4xl block mt-2 text-stealth-white opacity-90">— Eswatini&apos;s Trusted Security Partner</span>
             </h1>
             <p className="text-lg md:text-xl text-stealth-muted mb-10 leading-relaxed max-w-2xl">
               Stealth Security has protected homes, businesses, and events across Matsapha and the greater Manzini region for <strong className="text-stealth-white">over 16 years</strong> — with tactical armed teams,
