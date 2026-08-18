@@ -25,7 +25,6 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="#about" className="hover:text-stealth-bright transition-colors">About Us</Link></li>
               <li><Link href="#why-us" className="hover:text-stealth-bright transition-colors">Why Choose Us</Link></li>
-              <li><Link href="#" className="hover:text-stealth-bright transition-colors">Careers</Link></li>
               <li><Link href="#contact" className="hover:text-stealth-bright transition-colors">Contact</Link></li>
             </ul>
           </div>
@@ -36,21 +35,17 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><a href="https://wa.me/76906800" className="hover:text-stealth-bright transition-colors">WhatsApp: 76906800</a></li>
               <li><a href="tel:76906800" className="hover:text-stealth-bright transition-colors">Call: 76906800</a></li>
-              <li><a href="mailto:info@stealthsecurity.com" className="hover:text-stealth-bright transition-colors">Email Us</a></li>
-              <li><a href="#" className="hover:text-stealth-bright transition-colors">Facebook</a></li>
+              <li><a href="mailto:stealthsecurityeswatini@gmail.com" className="hover:text-stealth-bright transition-colors">Email Us</a></li>
             </ul>
           </div>
 
           {/* Location */}
           <div>
             <h3 className="text-stealth-white font-bold mb-4">Location</h3>
-            <p className="text-sm mb-2">
-              Serving the greater region with premier tactical security solutions.
-            </p>
             <p className="text-sm">
-              123 Security Blvd.<br />
-              Suite 400<br />
-              City, Region, 00000
+              F8W6+5PC, 7th Avenue<br />
+              Matsapha, Manzini Region<br />
+              Eswatini
             </p>
           </div>
 

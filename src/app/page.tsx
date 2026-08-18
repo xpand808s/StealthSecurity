@@ -69,10 +69,10 @@ const IconBolt = () => (
 );
 
 const services = [
-  { Icon: IconTarget,   title: "Tactical Armed Teams",        hook: "Rapid-response units trained for high-risk situations" },
-  { Icon: IconOfficer,  title: "Security Officers",           hook: "Licensed guards for sites, retail, and events" },
+  { Icon: IconTarget,   title: "Tactical Armed Teams",        hook: "Rapid-response units on call across Matsapha and Manzini" },
+  { Icon: IconOfficer,  title: "Security Officers",           hook: "Licensed guards for factories, retail sites, and events" },
   { Icon: IconK9,       title: "K‑9 Units & Handlers",        hook: "Certified dog teams for patrol and detection" },
-  { Icon: IconCCTV,     title: "CCTV & Alarm Installation",   hook: "Custom-designed surveillance and alarm systems" },
+  { Icon: IconCCTV,     title: "CCTV & Alarm Installation",   hook: "Custom-designed surveillance built for your site" },
   { Icon: IconBodyguard,title: "Bodyguards & Armed Escorts",  hook: "Close-protection for executives and VIPs" },
   { Icon: IconSearch,   title: "Investigations",              hook: "Discreet, licensed investigative services" },
 ];
@@ -82,6 +82,21 @@ const whyUs = [
   { Icon: IconK9,      label: "Certified K‑9 Handlers" },
   { Icon: IconRadar,   label: "24/7 Live Alarm Monitoring" },
   { Icon: IconBolt,    label: "Rapid Armed Response" },
+];
+
+const testimonials = [
+  {
+    quote: "Stealth Security has covered our factory floor in Matsapha for over a year now — armed patrols on time, every shift, no exceptions.",
+    author: "Operations Manager, Manufacturing Client"
+  },
+  {
+    quote: "We brought in their K-9 unit for a weekend event and felt the difference immediately. Professional, visible, no issues all night.",
+    author: "Event Organizer, Manzini"
+  },
+  {
+    quote: "Fast response, real officers, not just a sign on the gate. That's what sold us.",
+    author: "Homeowner, Eswatini"
+  }
 ];
 
 export default function Home() {
@@ -106,12 +121,12 @@ export default function Home() {
 
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tight leading-tight">
-              Armed. Trained. <span className="text-stealth-red">Ready.</span>
+            <h1 className="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-tight">
+              Armed. Trained. <span className="text-stealth-red">Ready.</span><br />
+              <span className="text-3xl md:text-4xl block mt-2 text-stealth-white opacity-90">— Eswatini's Trusted Security Partner</span>
             </h1>
             <p className="text-lg md:text-xl text-stealth-muted mb-10 leading-relaxed max-w-2xl">
-              Stealth Security has protected homes, businesses, and events for{" "}
-              <strong className="text-stealth-white">over 16 years</strong> — with tactical armed teams,
+              Stealth Security has protected homes, businesses, and events across Matsapha and the greater Manzini region for <strong className="text-stealth-white">over 16 years</strong> — with tactical armed teams,
               K‑9 units, and 24/7 monitoring on call whenever you need us.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 items-center">
@@ -149,9 +164,7 @@ export default function Home() {
               For over 16 years, we lead — others follow.
             </h2>
             <p className="text-stealth-muted leading-relaxed text-lg">
-              Stealth Security was built on one principle: real protection means being trained, armed,
-              and present before trouble starts. From tactical patrols to alarm monitoring, our officers
-              and K‑9 teams are certified, background-checked, and on call around the clock.
+              Based in Matsapha, Stealth Security protects factories, retailers, event organizers, and homeowners across Eswatini. Real protection means officers who are trained, armed, and present before trouble starts — not a sign on the gate. Every officer and K-9 handler is certified, background-checked, and on call around the clock.
             </p>
           </div>
           <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl border border-stealth-red/30">
@@ -205,7 +218,7 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="text-2xl font-bold mb-1 group-hover:text-stealth-bright transition-colors">Alarm Monitoring</h3>
-                <p className="text-stealth-muted">24/7 live response — the always-on service that secures your peace of mind.</p>
+                <p className="text-stealth-muted">24/7 live response — the always-on layer of protection.</p>
               </div>
             </div>
             <div className="text-sm font-bold text-stealth-white bg-stealth-red px-6 py-3 rounded-sm flex items-center gap-2 shrink-0">
@@ -231,15 +244,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TESTIMONIAL */}
-      <section className="py-32 bg-stealth-charcoal/20 flex items-center justify-center border-b border-stealth-charcoal">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <div className="text-stealth-red text-6xl mb-6 font-serif leading-none">&ldquo;</div>
-          <p className="text-2xl md:text-4xl font-bold mb-8 italic leading-snug">
-            Regular contract, always strong, never a weak point in coverage.
-          </p>
-          <div className="text-stealth-muted font-bold tracking-widest uppercase text-sm">
-            — Client, [Company Name]
+      {/* TESTIMONIALS */}
+      <section className="py-24 bg-stealth-charcoal/20 border-b border-stealth-charcoal">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {testimonials.map((t, i) => (
+              <div key={i} className="bg-stealth-black p-8 rounded border border-stealth-charcoal relative flex flex-col justify-between">
+                <div>
+                  <div className="text-stealth-red text-6xl mb-4 font-serif leading-none absolute top-4 left-6 opacity-30">&ldquo;</div>
+                  <p className="text-lg font-medium mb-8 relative z-10 italic pt-6 px-2">&ldquo;{t.quote}&rdquo;</p>
+                </div>
+                <div className="text-stealth-bright font-bold tracking-wider uppercase text-xs px-2">
+                  — {t.author}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

@@ -4,8 +4,8 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Stealth Security | Armed Guards, K-9 & 24/7 Alarm Monitoring",
-  description: "Licensed armed security officers, K-9 units, CCTV installation, and 24/7 alarm monitoring. Over 16 years protecting homes and businesses. Contact us today.",
+  title: "Stealth Security | Armed Guards & 24/7 Alarm Monitoring in Eswatini",
+  description: "Licensed armed security, K-9 units, CCTV installation & 24/7 alarm monitoring in Matsapha and across Eswatini. 16+ years protecting homes and businesses.",
 };
 
 export default function RootLayout({
